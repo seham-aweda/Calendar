@@ -1,7 +1,23 @@
 .App {
   text-align: center;
 }
-
+.grid{
+  display:grid;
+  grid-template: repeat(7,1fr) /repeat(7,1fr);
+  height:80vh;
+  width:75vw;
+  gap:7px;
+  margin:auto
+}
+.square{
+  transform: scale(1);
+  border:1px rgba(0,0,0,0.5) solid;
+  background-color: #f8d7a9;
+  border-radius: 7px;
+}
+.square:hover{
+  transform:scale(0.95)
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
