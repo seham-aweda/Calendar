@@ -28,11 +28,7 @@ body{
 .square:hover{
   transform:scale(0.95)
 }
-.circle{
-  border: 1px solid black;
-padding:2px 7px;
-  border-radius: 100%;
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
