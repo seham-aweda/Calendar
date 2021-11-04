@@ -89,10 +89,18 @@ const Calendar=()=>{
             setUsers(copyUsers)
             setTempUser(OneUser)
             setCurrentID(res.data.id)
+            toast(`Welcome ${OneUser}`,{
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            })
             setOneUser("")
             setPassword("")
             setShowMe(true)
-
         }}
         else{
             toast('Fill Out All The Fields',{
