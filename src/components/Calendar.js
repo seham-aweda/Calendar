@@ -142,13 +142,13 @@ const Calendar=()=>{
             {console.log(ShowMe)
             }            {TempUser === "" ?
                 <>
-                    <div style={{display:"flex"}}>
-                    <div><img src={"https://www.pixelstalk.net/wp-content/uploads/images5/September-2021-Calendar-Wallpaper-HD.jpg"} width={"70%"} height={"70%"}/></div>
-                    <div style={{margin:'auto'}}>
-                <input type={"text"} placeholder={'UserName'} required value={OneUser} name={'OneUser'} onChange={OnChangeInput}/>
-                <input type={"text"} placeholder={'PassWord'} required value={Password} name={'Password'} onChange={OnChangeInput}/>
+                    <div style={{position:'relative',zIndex:"0",height:"100vh",opacity:"0.3",background:`url(https://store-images.s-microsoft.com/image/apps.16701.9007199266367162.b3a5cd49-f0ff-4c9e-9b60-6eab5f68ffb9.452b9584-0a1c-42cb-a2eb-8de6664aa9eb?mode=scale&q=90&h=720&w=1280) center/cover no-repeat `}}>
+                    </div>
+                    <div style={{zoom:'130%',position:'fixed',zIndex:"1",top:'30%',left:'45%',height:'100%',margin:'auto',fontSize:'25px'}}>
+               <div> <input type={"text"}  placeholder={'UserName'} required value={OneUser} name={'OneUser'} onChange={OnChangeInput}/></div>
+              <div>  <input type={"text"} placeholder={'PassWord'} required value={Password} name={'Password'} onChange={OnChangeInput}/></div>
                 <input type={"button"} value={"Log In"} onClick={AddUser} className={'btn'}/>
-                </div></div> </> :
+                </div> </> :
                 <>
             {console.log(tim.getMonth()+1)}
                     <div style={{display:"flex",justifyContent: 'space-around'}}>

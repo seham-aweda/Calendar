@@ -4,7 +4,8 @@
 body{
   width:100vw;
   height:100vh;
-  font-family: "Felix Titling"
+  font-family: "Felix Titling";
+  font-size:20px
 }
 .App {
   text-align: center;
@@ -30,10 +31,6 @@ background-color:#daa94a;
   box-sizing: border-box;
 }
 
-img{
-  margin-top:15.80%;
-  float:left;
-}
 .grid{
   display:grid;
   grid-template: repeat(7,1fr) /repeat(7,1fr);
@@ -76,7 +73,7 @@ img{
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 140px;
   background-color: black;
   color: #fff;
   text-align: center;
@@ -90,6 +87,6 @@ img{
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
-  zoom:50%;
+  zoom:60%;
   transform: translateX(-70px);
 }
